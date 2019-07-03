@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style1.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+
+</head>
+<body>
+    
+    <form class="meeting_schedule" method="POST">
+        <div id="stff" class="form-group">
+            <select name="staff_name" id="selection" class="form-control" onchange="ark()" >
+                <option value="sf" id="staff_selection">Loading</option>
+            </select>
+        </div>  
+
+        <div id="tpc" class="form-group">
+            <select name="meeting_topics" id="topic" class="form-control" onchange="ark()">
+                <option value="tc" id="topic_selection">Loading</option>
+            </select>
+        </div>
+        
+        <div id="tme" class="form-group">
+            <select name="meeting_time" id="time" class="form-control" onchange="ark()">
+                <option value="te" id="Meeting_time">Loading</option>
+            </select>
+        </div>
+
+        <div id="book_meeting">
+            <input type="submit" name="submit" >
+        </div>
+        
+    </form>
+</body>
+</html>
